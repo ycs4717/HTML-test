@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input name="text" type="text" placeholder="메시지 입력" maxlength="5"/> <br> <br> <!-- placeholder:메시지 입력 이라는 글이 인풋창에 희미하게 나옴. maxlength:최대입력 수 -->
+    <input name="button" type="button" value="PUSH"/> <br> <br> <!-- value:버튼 이름 설정 -->
+    <input name="color" type="color"/> 색을 골라보세요.<br> <br>
+    <input name="score" type="range" max="100" min="0" step="10"/> <br> <br>
+    <input name="birthday" type="date"/> 
+    <br> <br>
+
+    <select name="카페" multiple> <!-- select에 multiple 입력하면 항목을 다중 선택 가능 -->
+        <option value="starbucks">스타벅스</option>
+        <option value="coffeebean">커피빈</option>
+        <option value="ediya">이디야</option>
+        <option value="pasucucci">파스쿠찌</option>
+    </select>
+    <br><br>
+
+    <textarea name="letter" rows="10" cols="10">기본적으로 쓰여 있는 텍스트</textarea> <!-- input에는 한 줄밖에 쓸 수 없지만, textarea는 다름. rows:가로 제한, cols:세로제한 -->
+    <br><br>
+
+    <h2>form은 입력 요소들을 감싸며, 입력 값을 서버측으로 제출할 수 있다.</h2>
+    <p>form 속성</p>
+    <p>action:입력값을 전송할 서버의 url</p>
+    <p>method:클라이언트가 입력한 데이터를 어떤 식으로 전송할지(GET or POST)</p>
+    <p>GET:서버에서 요청을 보내어 응답을 받아낸다. 서버로부터 정보를 '가져오겠다'는 성격의 요청</p>
+    <p>서버에 요청을 보내어 작업을 수행. 서버에 있는 데이터를 추가/수정/삭제 한 후에 응답을 받아냄. 서버의 정보를 '조작하겠다'는 성격의 요청</p>
+
+    <h1>키우고 싶은 동물 고르기</h1>
+    <form accept="exam.php" method="POST">
+        <input type="text" placeholder="NAME" name="name">
+        <br>
+        <select name="pet">
+            <option value="dog">강아지</option>
+            <option value="cat">고양이</option>
+            <option value="parrot">앵무새</option>
+        </select>
+        <br>
+        <input type="submit" value="전송">
+    </form>
+
+    <h2>meta태그는 HTML문서에 대한 메타데이터를 정의. 메타데이터란 '정보'를 의미함. meta태그는 항상 head태그의 안에 들어가며,
+        일반적인 문자 세트, 페이지 설명, 키워드, 문서의 작성자 및 뷰포트 설정을 지정하는데 사용</h2>
+    <p>웹페이지에 대한 정보를 제공하므로 검색엔진이 페이지를 검색할 때 참고할 수 있고, 검색 결과에도 반영 할 수 있다.</p>
+    <p>meta태그의 유형&속성</p>
+
+    <ul>
+        <li>charset:문자 인코딩에 대한 요약 정보를 기입하는 속성. 한,영 사용하기 위해서는 utf-8</li>
+        <li>http-equiv:콘텐츠 속성 정보에 대한 http헤더를 제공.(데이터를 주고받는데 필요한 속성)</div></li>
+        <li>name:문서에대한 정보</li>
+        <li>content:메타데이터 내용</li>
+    </ul>
+    
+    </body>
+
+</html>

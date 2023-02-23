@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- 문서유형을 지정하는 단일 태그 -->
+
+<html>
+    <head> <!-- 웹 브우 화면에는 보이지 않지만 웹  브라우저가 알아야 할 정보들은 모두 이 태그에 들어간다 -->
+    
+        <meta charset="utf-8"> <!-- 문자 인코딩 및  문서 키워드 등에 대한 요약정보를 기입하는 단일 태그 (영문과 한글을 모두 사용하기 위해　utf-8방식을 사용하는것이 좋다) -->
+
+        <title>유노코딩</title> <!-- 문서의 제목을 나타냄-->
+    </head>
+    
+    <body> <!-- 실제로 브라우저 화면애 표사될 내용을 입력하는 태그  -->
+        열심히 해봐용!!    
+    </body>
+    <strong style="color: red;">Hello</strong> <!-- 강조는<strong></strong>태그로 하면 글이 굷어짐. 속성은 앞쪽 태그에서 띄어쓰고 style 입력 -->
+    <P>이것은 문단 태그</P> <!-- 문단 요소를 나타내는 태그. 하나의 p태그는 하나의 문단을 표현 -->
+    <h1>이것은 제목 태그</h1> <!-- h1부터 h6까지 숫자가 크면 크기가 작음 -->
+    <hr> <!-- 수평선 태그. 단일 태그임. -->
+    <br> <!-- 줄바꿈 태그. 엔터쳐도 줄바꿈 안됨 -->
+    <p>공&nbsp;&nbsp;&nbsp;백 태그</p> <!-- &nbsp;html은 공백 만드려면 태그를 써야 함 -->
+
+    <!-- h1태그랑 p태그는 블록 요소를 만든다 -->
+    <h1>제목을 표시하는 큰 텍스트!</h1>
+    <p>문단을 나타내는 작은 텍스트. 이 태그는 블록 요소를 만들까요? 아니면 인라인 요소를 만들까요?</p>
+    
+    <!-- em 태그와 mark 태그는 인라인 요소를 만드는 태그 -->
+    <em>em태그는 감싸고 있는 콘텐츠를 기울여 이탤릭체로 표시하는 태그</em> <!-- 이탤릭체란 글 기울림 -->
+    <mark>마크태그를 이용해서 내용을 형광펜 표시를 더 해줌</mark> <!-- mark태그 부분을 형광펜으로 표시 -->
+    
+    <p>html에 이미지 삽입하기</p>
+    <!-- 1. 내 컴퓨터에 있는 이미지 사용 -->
+    <img src= "/Users/gs/Documents/images/test.png" alt="이미지가 유실될 때 alt에 있는 문구가 출력" width="300" height="300" title="귀여운 양아치"/> <!-- img 태그로 src속성을 이용해서 이미지 파일이 있는 위치를 입력. 이미지가 유실 될 때를 대비해서 주소 뒤에 alt태그를 사용해서 문구가 출력되게 할 수 있음. 이미지의 속성은 주소 뒤에 width, height 등 조절 가능 -->
+
+    <!-- 2. 웹에 있는 이미지를 사용 -->
+    <img src="https://upload.wikimedia.org/wikipedia/ko/c/cd/Doraemon.PNG">
+
+    <!-- 컨테이너 태그: 콘텐츠나 레이아웃에 아무런 영향도 주지 않고, 다른 요소 여럿을 묶어 관리하기 편하게 만드는 역할을 하는 태그(<div></div>,<span></span>)-->
+    
+    <hr>
+    <div id="컨테이너 태그">
+        <h2><span>운동</span> 열심히 하기</h2>
+        <p>건강을 위해 운동을 열심히 하자</p>
+        <p>위에 두 줄은 div 태그를 사용한, 컨테이너 태그이다</p>
+    </div>
+    <span>이것은 span 태그</span> 
+
+    <hr>
+    <div id="전역속성">
+        <h2 class="title">전역속성은 모든 HTMl 태그에서 공통으로 사용할 수 있는 속성. 속성이랑, 태그의 부가적인 기능을 정의하는 것.</h2> <!-- (<태그명 속성명 = "속성값" 속성명 = "속성값">콘텐츠</태그명) -->
+        <!-- 순서 있는 목록<ol></ol>, 순서 없는 목록<ul></ul>, 목록에 들어가는 항목<li></li>을 사용해서 목록 생성 -->
+        <ul>
+            <li>id: 요소에 고유한 이름을 부여하는 식별자 역할 속성.</li>
+            <li>class: 요소를 그룹 별로 묶을 수 있는 식별자 역할 속성.</li>
+            <li>style: 요소에 적용할 css스타일을 선언하는 속성.</li>
+            <li>title: 요소의 추가 정보를 제공하는 텍스트 속성. 사용자에게 툴팁(글에 커서대면 말풍선 나와서 부가 설명) 제공.(class등에 지정한 타이틀이랑 전혀 다름. 상단 이미지태그에 적용해놨음)</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>링크는 a태그의 요소 href를 통해 링크를 만든다.
+            <br>
+            전화걸기:<xmp><a href="tel:010-1234-1234">010-1234-1234</a></xmp>
+            <a href="tel:010-1234-1234">010-1234-1234</a>
+            <br>
+            메일보내기:<xmp><a href="mailto:ycs47171@gmail.com">ycs47171@gmail.com</a></xmp>
+            <a href="mailto:ycs47171@gmail.com">ycs47171@gmail.com</a>
+        </h2>
+        <xmp><a href="https://genshin.gamedot.org/?mid=genshinmaps">여기는 원신 맵스</a></xmp>
+        <a href="https://genshin.gamedot.org/?mid=genshinmaps">여기는 원신 맵스</a>
+        <p>xmp태그를 쓰면 코드를 html에 바로 출력 가능!</p>
+        <p>a태그는 기본적으로 현재 탭에서 링크로 이동함. 새 탭에서 열고 싶으면<xmp><a href="https://genshin.gamedot.org/?mid=genshinmaps" target="_blank">여기는 원신 맵스</a></xmp>->주소 띄우고 target="_blank" 추가</p>
+        <a href="https://genshin.gamedot.org/?mid=genshinmaps" target="_blank">여기는 원신 맵스</a>
+        <br>
+        <p>a태그 안 href주소 뒤에 이미지를 넣으면 이미지 클릭시 주소로 이동 가능</p>
+        <a href="https://genshin.gamedot.org/?mid=genshinmaps" ><img src= "/Users/gs/Documents/images/test2.png" width="300" height="300"여기는 원신 맵스</a>
+
+    </div>
+
+
+    </html>
